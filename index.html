@@ -1,5 +1,210 @@
-<html>
-    <body>
-        <p> This is a paragraph.</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Portfolio </title>
+  <link rel = "stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a99f1bb358.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+  <div class ="container">
+    <nav>
+      <img src="resume/logo1.png" class ="logo" >
+      <ul>
+        <li><a href="#header" >Home</a></li>
+        <li><a href="#about" >About</a></li>
+        <li><a href="#skills" >My Skills</a></li>
+        <li><a href="#My-Projects" >My Projects</a></li>
+        <li><a href="#contact" >Contact</a></li>
+        <i class="fa-solid fa-circle-xmark"></i>
+      </ul>
+      <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class ="header-text">
+      <a href="images/bishal_resume_05-05-2023.pdf"  download class="btn btn2" >Download CV</a>
+      <p> Full Stack Developer</p>
+      <h1> Hi, I'm <span>Bishal</span> <br> Timalsina.</h1>
+    </div>
+
+
+</div>
+<!-- -------about------------- -->
+<div id="about">
+  <div class = "container">
+    <div class = "row">
+      <div class = "about-col-1">
+        <img src="resume/bishal(1).jpg">
+      </div>
+      <div class = "about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p> This is my portfolio. This will help me while applying for research and internships.</p>
+
+        <div class="tab-titles">
+          <p class ="tab-links active-link" onclick = "opentab('skills')">Skills</p>
+          <p class ="tab-links" onclick = "opentab('experience')">Experience  </p>
+          <p class ="tab-links" onclick = "opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills" >
+          <ul>
+            <li><span> Software Engineering</span><br> Designing Web Interfaces</li>
+            <li><span> Web Development</span><br> Web app Development</li>
+            <li><span> App Development</span><br> Building Android/ios Apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id ="experience">
+          <ul>
+            <li><span> Incoming </span><br> Teaching Associate(10 hr/ week), Computer Science Department, Berea College</li>
+            <li><span> Feb 2022- Present</span><br> Teaching Assistant(5 hr/week), Computer Science Department, Berea College</li>
+            <li><span> Dec 2022-Jan 2023</span><br>Operations Associate, Public Safety Berea College </li>
+            <li><span> July 2021 – August 2022</span><br> Software Engineering Intern</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span> Aug 2022 - Present</span><br> B.A. Computer and Information Science, Berea College</li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----------Services------->
+<div id ="services">
+  <div class = "container">
+    <h1 class="sub-title"> My Skills</h1>
+    <div class = "skills-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Programming Langugaes</h2>
+        <p> Python, C++, JavaScript</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2> Web technologies:</h2>
+        <p> HTML5, CSS 3</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-apple-whole"></i>
+        <h2>Developer Tools</h2>
+        <p> Git, GitHub, Flask</p>
+        <a href="#">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!---------My Projects------->
+<div id ="My-Projects">
+  <div class = "container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class = "work-list">
+      <div class = "work">
+        <img src="resume/stock.jpg">
+        <div class="layer">
+          <h3>Stock Market Analysis</h3>
+          <p> Developed a robust stock market analysis platform in Python that tracks and analyzes S&P 500 stocks. </p>
+          <a href ="https://github.com/timalsinab/stockmarketexchange/tree/master"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+      
+
+     <div class = "work">
+       <img src="resume/client book (1).png">
+       <div class="layer">
+         <h3>Client Book</h3>
+         <p> A full stack Client Management Service Application.</p>
+         <a href ="https://github.com/AnishKharel/ClientBook"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+       </div>
+     </div>
+
+     <div class = "work">
+        <img src="resume/spam detector.jpg">
+        <div class="layer">
+          <h3> Email Spam Detector </h3>
+          <p> This project aims to develop an email spam classifier using machine learning techniques. The objective is to create a model that can accurately differentiate between spam and legitimate emails, thereby improving email filtering and reducing the impact of unwanted messages on users' inboxes.</p>
+          <a href ="https://github.com/timalsinab/emailspam"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+   </div>
+   <a href = "#" class ="btn"> See more </a>
+ </div>
+</div>
+
+<! -----contact----- ->
+<div id="contact">
+ <div class="container">
+   <div class ="row">
+     <div class="contact-left">
+       <h1 class ="sub-title">Contact Me</h1>
+       <p><i class="fa-solid fa-envelope"></i> timalsinabishal7@gmail.com</p>
+       <p><i class="fa-solid fa-phone"></i> 4255434231</p>
+       <div class ="social-icons">
+         <a href="https://www.linkedin.com/in/timalsinab/"><i class="fa-brands fa-linkedin"></i></a>
+         <a href="https://github.com/timalsinab"><i class="fa-brands fa-github"></i></a>
+
+       </div>
+
+     </div>
+     <div class="contact-right"></div>
+       <form name="submit-to-google-sheet">
+         <input type="text" name="Name" placeholder="Your Name" required>
+         <input type = "email" name="Email" placeholder="Your Email" required>
+         <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+         <button type="submit" class ="btn btn2">Submit</button>
+       </form>
+     <span id = "msg"></span>
+   </div>
+ </div>
+ <div class ="copyright">
+   <p>Copyright ⓒ Bishal. </p>
+ </div>
+</div>
+
+
+
+<script>
+  var tablinks= document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+
+</script>
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzO4KP4C3g4FtTDAM7RC8tpIxKiqCYKwQx-7JdebmGtclIukeeylZWTuvFqOYIek-Q_uQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Message sent successfully"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },5000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+  })
+  </script>
+</div>
+</body>
 </html>
